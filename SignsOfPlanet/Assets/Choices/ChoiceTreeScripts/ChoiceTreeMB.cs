@@ -9,17 +9,29 @@ public class ChoiceTreeMB : MonoBehaviour
     public static int NumberOfChoices = 3;
     public Image[] ChUIImages = new Image[NumberOfChoices];
     public Choice Data;
+    Animator animator;
+    public GameObject[] ChButtons = new GameObject[NumberOfChoices]; 
+
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void ChoiceButPressed(int choice)
     {
         if(Enumerable.Range(0, NumberOfChoices).Contains(choice))
         {
-            Data.Elements[choice].Picked();
+            foreach(GameObject but in ChButtons)
+            {
+                but.SetActive(false);
+            }
+            //Data.Elements[choice].Picked();
+            //Invoke("NewPhase", Data.Elements[choice].AnimationC.length);
+            Debug.Log(choice);
+            Debug.Log(Data.name);
+            animator.SetTrigger(Data.Elements[choice].AnimationC.name);
 
-            Invoke("NewPhase", Data.Elements[choice].AnimationC.length);
-            Data.Elements[choice].Animator.SetBool("Start", true);
-
-            Data = Data.Elements[choice].NextChoice;
+            //Data = Data.Elements[choice].NextChoice;
         }
     }
 
@@ -27,7 +39,7 @@ public class ChoiceTreeMB : MonoBehaviour
     {
         for(int i = 0; i < Data.Elements.Length; i++)
         {
-            ChUIImages[i].sprite = Data.Elements[i].Icon;
+            ChUIImages[i].sprite = Data.nextChoiceIcons[i];
         }
     }
 }

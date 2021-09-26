@@ -6,4 +6,5 @@ using UnityEngine;
 public class Choice : ScriptableObject
 {
     public ChoiceElement[] Elements = new ChoiceElement[ChoiceTreeMB.NumberOfChoices];
+    public Sprite[] nextChoiceIcons = new Sprite[ChoiceTreeMB.NumberOfChoices];
 }

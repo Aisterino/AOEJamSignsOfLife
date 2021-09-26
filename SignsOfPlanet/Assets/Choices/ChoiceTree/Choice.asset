@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Choice
   m_EditorClassIdentifier: 
   Elements:
-  - {fileID: 11400000, guid: 264fe70c6f3095542942e72ed3f09d57, type: 2}
-  - {fileID: 11400000, guid: 4985b2e31be79af47aec55e9936a8ac1, type: 2}
   - {fileID: 11400000, guid: 5c0ee26e46260444cb6f63bd3547df77, type: 2}
+  - {fileID: 11400000, guid: 8726597f270eed9428d69a1f3e00d545, type: 2}
+  - {fileID: 11400000, guid: ef6fc5b78e6c25d4cb50da97e98c533a, type: 2}
+  nextChoiceIcons:
+  - {fileID: 21300000, guid: 47f24d9f2fe9f17428b9727f6a584e06, type: 3}
+  - {fileID: 21300000, guid: 69edfc2b8ab6a484f832dd2e7c843625, type: 3}
+  - {fileID: 21300000, guid: d3b452eae1fd65c4c9c28961bf25b8e3, type: 3}

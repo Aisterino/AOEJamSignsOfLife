@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 800bf61da86c37b459644db6d62a93d9, type: 3}
   m_Name: ChoiceElement 2
   m_EditorClassIdentifier: 
-  Name: 1
+  Name: 
   NextChoice: {fileID: 0}
+  AnimationC: {fileID: 0}
+  Animator: {fileID: 0}

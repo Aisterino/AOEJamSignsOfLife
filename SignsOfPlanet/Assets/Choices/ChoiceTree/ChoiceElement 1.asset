@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: ChoiceElement 1
   m_EditorClassIdentifier: 
   Name: 1
-  NextChoice: {fileID: 11400000, guid: 579fce5d1a4ea4c4d8b6cb6e7739106c, type: 2}
+  Icon: {fileID: 0}
+  NextChoice: {fileID: 0}
+  AnimationC: {fileID: 0}
+  Animator: {fileID: 0}
